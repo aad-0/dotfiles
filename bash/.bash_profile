@@ -51,25 +51,6 @@ alias socat-vcom="socat -d -d pty,raw,echo=0 pty,raw,echo=0"
 # export TMUX_TMPDIR=~/
 #
 
-# dotnet bin
-export PATH="/home/aad/.dotfiles/bin:$PATH"
-
-
-export STM32_PRG_PATH=/home/aad/STMicroelectronics/STM32Cube/STM32CubeProgrammer/bin
-. "$HOME/.cargo/env"
-export PATH="/home/aad/.local/bin:$PATH"
-export PATH="/home/aad/ninja:$PATH"
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-export GZ_SIM_SYSTEM_PLUGIN_PATH=$HOME/ardupilot_gazebo/build:${GZ_SIM_SYSTEM_PLUGIN_PATH}
-export GZ_SIM_RESOURCE_PATH=$HOME/ardupilot_gazebo/models:$HOME/ardupilot_gazebo/worlds:${GZ_SIM_RESOURCE_PATH}
-
-
-
-
-
 echo '
 bind-key -n "M-R" respawn-pane -k
 bind-key -n "M-G" set-option -g status
@@ -88,5 +69,3 @@ bind-key -n "M-K" resize-pane -U
 bind-key -n "M-L" resize-pane -R
 bind-key -n "M-:" command-prompt
 '
-# source /home/aad/.local/share/bob/env/env.sh
-source /home/aad/alacritty/extra/completions/alacritty.bash
