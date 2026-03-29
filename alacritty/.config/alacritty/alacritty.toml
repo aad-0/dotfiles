@@ -22,7 +22,7 @@ TERM                  = "xterm-256color"
 padding               = { x = 10, y = 10 }
 #dynamic_padding       = true
 decorations           = "None"
-opacity               = 0.45
+opacity               = 0.87
 # blur                  = true
 #startup_mode          = "Windowed"
 #title                 = "Alacritty"
@@ -38,10 +38,10 @@ history               = 65535
 #multiplier            = 3
 
 [font]
-normal                = { family = "UbuntuMonoNerdFont Propo", style = "Regular" }
-bold                  = { family = "UbuntuMonoNerdFont Propo", style = "Bold" }
-italic                = { family = "UbuntuMonoNerdFont Propo", style = "Italic" }
-bold_italic           = { family = "UbuntuMonoNerdFont Propo", style = "Bold Italic" }
+# normal                = { family = "UbuntuMonoNerdFont Propo", style = "Regular" }
+# bold                  = { family = "UbuntuMonoNerdFont Propo", style = "Bold" }
+# italic                = { family = "UbuntuMonoNerdFont Propo", style = "Italic" }
+# bold_italic           = { family = "UbuntuMonoNerdFont Propo", style = "Bold Italic" }
 size                  = 8
 offset                = { x = 0, y = 0 }
 glyph_offset          = { x = 0, y = 0 }
