@@ -36,7 +36,7 @@ exec --no-startup-id nm-applet
 
 # exec --no-startup-id picom --experimental-backends
 # exec --no-startup-id picom --legacy-backend --backend glx
-exec --no-startup-id picom --legacy-backend --backend glx
+exec --no-startup-id picom --backend xrender
 
 exec --no-startup-id ~/.config/i3/random_wallpaper.sh
 
