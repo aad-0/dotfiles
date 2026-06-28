@@ -87,3 +87,6 @@ bind-key -n "M-K" resize-pane -U
 bind-key -n "M-L" resize-pane -R
 bind-key -n "M-:" command-prompt
 '
+
+# Created by `pipx` on 2026-06-28 09:42:32
+export PATH="$PATH:/home/aad/.local/bin"
