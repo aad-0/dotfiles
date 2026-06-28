@@ -35,11 +35,13 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 
 # exec --no-startup-id picom --experimental-backends
-# exec --no-startup-id picom --legacy-backend --backend glx
-exec --no-startup-id picom --backend xrender
+exec --no-startup-id picom --experimental-backends --backend glx
+# exec_always --no-startup-id picom --experimental-backends --backend glx --vsync
+# exec_always --no-startup-id picom --backend xrender
 
-exec --no-startup-id ~/.config/i3/random_wallpaper.sh
 
+# exec --no-startup-id feh --bg-fill --randomize ~/Pictures/Wallpapers
+exec --no-startup-id feh --bg-fill  ~/Pictures/Wallpapers/wallhaven-vqojj8.jpg
 exec --no-startup-id xset s off -dpms
 
 
@@ -204,10 +206,6 @@ bindsym $mod+r mode "resize"
 # bindsym Print exec --no-startup-id maim "/home/$USER/Pictures/$(date)"
 # bindsym $mod+Print exec --no-startup-id maim --window $(xdotool getactivewindow) "/home/$USER/Pictures/$(date)"
 # bindsym Shift+Print exec --no-startup-id maim --select "/home/$USER/Pictures/$(date)"
-
-
-bindsym $mod+Shift+w exec --no-startup-id ~/.config/i3/random_wallpaper.sh
-
 bindsym Print exec --no-startup-id ~/scripts/maim_noblur.sh "/home/$USER/Pictures/$(date)"
 bindsym $mod+Print exec --no-startup-id ~/scripts/maim_noblur.sh --window $(xdotool getactivewindow) "/home/$USER/Pictures/$(date)"
 bindsym Shift+Print exec --no-startup-id ~/scripts/maim_noblur.sh --select "/home/$USER/Pictures/$(date)"
@@ -216,7 +214,10 @@ bindsym Shift+Print exec --no-startup-id ~/scripts/maim_noblur.sh --select "/hom
 # Clipboard Screenshots
 bindsym Ctrl+Print exec --no-startup-id maim ~/scripts/maim_noblur.sh  | xclip -selection clipboard -t image/png
 bindsym Ctrl+$mod+Print exec --no-startup-id maim --window $(xdotool getactivewindow) | xclip -selection clipboard -t image/png
-bindsym Ctrl+Shift+Print exec --no-startup-id maim --select | xclip -selection clipboard -t image/png
+bindsym Ctrl+Shift+Print exec --no-startup-id ~/scripts/maim_noblur.sh --select | xclip -selection clipboard -t image/png
+
+
+# bindsym Ctrl+Shift+Print exec --no-startup-id ~/scripts/maim_noblur.sh --select
 
 # bindsym Ctrl+p exec --no-startup-id ~/scripts/maim_noblur.sh | xclip -selection clipboard -t image/png
 # bindsym Ctrl+$mod+p exec --no-startup-id ~/scripts/maim_noblur.sh --window $(xdotool getactivewindow) | xclip -selection clipboard -t image/png
