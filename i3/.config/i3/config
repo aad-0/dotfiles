@@ -206,15 +206,15 @@ bindsym $mod+r mode "resize"
 # bindsym Print exec --no-startup-id maim "/home/$USER/Pictures/$(date)"
 # bindsym $mod+Print exec --no-startup-id maim --window $(xdotool getactivewindow) "/home/$USER/Pictures/$(date)"
 # bindsym Shift+Print exec --no-startup-id maim --select "/home/$USER/Pictures/$(date)"
-bindsym Print exec --no-startup-id ~/scripts/maim_noblur.sh "/home/$USER/Pictures/$(date)"
-bindsym $mod+Print exec --no-startup-id ~/scripts/maim_noblur.sh --window $(xdotool getactivewindow) "/home/$USER/Pictures/$(date)"
-bindsym Shift+Print exec --no-startup-id ~/scripts/maim_noblur.sh --select "/home/$USER/Pictures/$(date)"
+bindsym Print exec --no-startup-id ~/.config/sh_scripts/maim_noblur.sh "/home/$USER/Pictures/$(date)"
+bindsym $mod+Print exec --no-startup-id ~/.config/sh_scripts/maim_noblur.sh --window $(xdotool getactivewindow) "/home/$USER/Pictures/$(date)"
+bindsym Shift+Print exec --no-startup-id ~/.config/sh_scripts/maim_noblur.sh --select "/home/$USER/Pictures/$(date)"
 
 
 # Clipboard Screenshots
-bindsym Ctrl+Print exec --no-startup-id maim ~/scripts/maim_noblur.sh  | xclip -selection clipboard -t image/png
+bindsym Ctrl+Print exec --no-startup-id maim ~/.config/sh_scripts/maim_noblur.sh  | xclip -selection clipboard -t image/png
 bindsym Ctrl+$mod+Print exec --no-startup-id maim --window $(xdotool getactivewindow) | xclip -selection clipboard -t image/png
-bindsym Ctrl+Shift+Print exec --no-startup-id ~/scripts/maim_noblur.sh --select | xclip -selection clipboard -t image/png
+bindsym Ctrl+Shift+Print exec --no-startup-id ~/.config/sh_scripts/maim_noblur.sh --select | xclip -selection clipboard -t image/png
 
 
 # bindsym Ctrl+Shift+Print exec --no-startup-id ~/scripts/maim_noblur.sh --select
