@@ -59,7 +59,8 @@ set hlsearch
 "set guifont=8514oem:h20:
 "set guifont=Terminal:h18:b
 "set guifont=Unispace:h12:w8:b:cANSI
-set guifont=Unispace:h14:w10:b:cANSI
+set guifont=UbuntuMonoNerdFont\ Propo:h12
+
 set linespace=16
 
 
