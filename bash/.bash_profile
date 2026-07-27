@@ -90,3 +90,7 @@ bind-key -n "M-:" command-prompt
 
 # Created by `pipx` on 2026-06-28 09:42:32
 export PATH="$PATH:/home/aad/.local/bin"
+
+# Java fixes for window managers / rendering
+export _JAVA_AWT_WM_NONREPARENTING=1
+export _JAVA_OPTIONS="-Dsun.java2d.xrender=false"

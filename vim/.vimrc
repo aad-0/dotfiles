@@ -38,7 +38,7 @@ set cursorline
 
 
 
-set backspace=2
+"  set backspace=4
 set backspace=indent,eol,start
 
 set softtabstop=4
