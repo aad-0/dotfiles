@@ -1,0 +1,25 @@
+{
+  "name": "ROS 2 Lyrical Development",
+  "image": "osrf/ros:lyrical-desktop-full",
+  "runArgs": [
+    "--net=host",
+    "--shm-size=2g",
+    "--privileged",
+    "-e", "DISPLAY=${env:DISPLAY}",
+    "-v", "/tmp/.X11-unix:/tmp/.X11-unix",
+    "-v", "/dev:/dev"
+  ],
+  "containerEnv": {
+    "RMW_IMPLEMENTATION": "rmw_fastrtps_cpp"
+  },
+  "postCreateCommand": "apt-get update && apt-get install -y gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-tools",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-iot.vscode-ros",
+        "ms-vscode.cpptools",
+        "ms-python.python"
+      ]
+    }
+  }
+}

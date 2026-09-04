@@ -71,9 +71,9 @@ set linespace=16
 " colorscheme elflord " Dark Contrast, Good
 " colorscheme evening " Quite Good
 " colorscheme industry " Not That Good
-colorscheme koehler "Dark Quite Good
+" colorscheme koehler "Dark Quite Good
 " colorscheme murphy " Dark, not that Good
-" colorscheme pablo " Dark Good
+colorscheme pablo " Dark Good
 " colorscheme ron "  Not That Good
 " colorscheme torte "Kinda 
 " colorscheme slate " DarkGray Good
