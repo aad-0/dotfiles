@@ -36,11 +36,10 @@ set number
 set cursorline
 "set cursorcolumn
 
-
-
-"  set backspace=4
+"set backspace=4
 set backspace=indent,eol,start
 
+set linespace=4
 set softtabstop=4
 set tabstop=4
 set shiftwidth=4
@@ -59,35 +58,29 @@ set hlsearch
 "set guifont=8514oem:h20:
 "set guifont=Terminal:h18:b
 "set guifont=Unispace:h12:w8:b:cANSI
-set guifont=UbuntuMonoNerdFont\ Propo:h12
-
-set linespace=16
-
-
-" colorscheme default " Kinda Nic
-" colorscheme blue "Not Bad
-" colorscheme darkBlue " Not Bad
-" colorscheme desert " Very Good
-" colorscheme elflord " Dark Contrast, Good
-" colorscheme evening " Quite Good
-" colorscheme industry " Not That Good
-" colorscheme koehler "Dark Quite Good
-" colorscheme murphy " Dark, not that Good
-colorscheme pablo " Dark Good
-" colorscheme ron "  Not That Good
-" colorscheme torte "Kinda 
-" colorscheme slate " DarkGray Good
-" colorscheme peachpuff "Light, Good
-" colorscheme morning" White Good
-" colorscheme zellner " White Good
-" colorscheme delek "White Not Good
-" colorscheme shine "White, Not that Good
-" User Schemes
-" colorscheme gruvbox
-" colorscheme iceberg
-" colorscheme nord
+"set guifont=UbuntuMonoNerdFont\ Propo:h16
+"set guifont=UbuntuMono\ Nerd\ Font\ Propo:w8:h16
+set guifont=0xProto\ Nerd\ Font\ Propo:w8:h16
 
 
+"colorscheme default " Kinda Nic
+"colorscheme blue "Not Bad
+"colorscheme darkBlue " Not Bad
+"colorscheme desert " Very Good
+"colorscheme elflord " Dark Contrast, Good
+"colorscheme evening " Quite Good
+"colorscheme industry " Not That Good
+"colorscheme koehler "Dark Quite Good
+"colorscheme murphy " Dark, not that Good
+"colorscheme pablo " Dark Good
+"colorscheme ron "  Not That Good
+"colorscheme torte "Kinda 
+colorscheme slate " DarkGray Good
+"colorscheme peachpuff "Light, Good
+"colorscheme morning" White Good
+"colorscheme zellner " White Good
+"colorscheme delek "White Not Good
+"colorscheme shine "White, Not that Good
 
 "table colors
 :hi TabLineFill ctermfg=black ctermbg=black
@@ -99,7 +92,7 @@ colorscheme pablo " Dark Good
 "
 ":hi CursorLineNr ctermbg=None ctermfg=None
 :hi CursorLine cterm=bold ctermbg=DarkGray ctermfg=Gray
-":hi CursorLine cterm=bold ctermbg=Black ctermfg=None
+" :hi CursorLine cterm=bold ctermbg=Black ctermfg=None
 
 " highligh Row Line
 
