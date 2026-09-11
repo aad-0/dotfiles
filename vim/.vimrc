@@ -40,8 +40,8 @@ set cursorline
 set backspace=indent,eol,start
 
 set linespace=4
-set softtabstop=4
 set tabstop=4
+set softtabstop=4
 set shiftwidth=4
 set expandtab
 
@@ -57,25 +57,25 @@ set hlsearch
 
 "set guifont=8514oem:h20:
 "set guifont=Terminal:h18:b
-"set guifont=Unispace:h12:w8:b:cANSI
+" set guifont=Unispace:h12:w8:b:cANSI
 "set guifont=UbuntuMonoNerdFont\ Propo:h16
 "set guifont=UbuntuMono\ Nerd\ Font\ Propo:w8:h16
-set guifont=0xProto\ Nerd\ Font\ Propo:w8:h16
-
+"set guifont=0xProto\ Nerd\ Font\ Propoh16
+"set guifont=UbuntuMono\ Nerd\ Font\ Propo:w8:h16
 
 "colorscheme default " Kinda Nic
 "colorscheme blue "Not Bad
 "colorscheme darkBlue " Not Bad
 "colorscheme desert " Very Good
 "colorscheme elflord " Dark Contrast, Good
-"colorscheme evening " Quite Good
+colorscheme evening " Quite Good
 "colorscheme industry " Not That Good
 "colorscheme koehler "Dark Quite Good
 "colorscheme murphy " Dark, not that Good
 "colorscheme pablo " Dark Good
 "colorscheme ron "  Not That Good
 "colorscheme torte "Kinda 
-colorscheme slate " DarkGray Good
+"colorscheme slate " DarkGray Good
 "colorscheme peachpuff "Light, Good
 "colorscheme morning" White Good
 "colorscheme zellner " White Good
@@ -91,11 +91,10 @@ colorscheme slate " DarkGray Good
 "
 "
 ":hi CursorLineNr ctermbg=None ctermfg=None
-:hi CursorLine cterm=bold ctermbg=DarkGray ctermfg=Gray
-" :hi CursorLine cterm=bold ctermbg=Black ctermfg=None
+":hi CursorLine cterm=bold ctermbg=DarkGray ctermfg=Gray
+:hi CursorLine cterm=None ctermbg=DarkGray ctermfg=Gray
 
 " highligh Row Line
-
 let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
 set ruler
 

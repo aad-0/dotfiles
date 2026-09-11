@@ -38,10 +38,21 @@ history               = 65535
 #multiplier            = 3
 
 [font]
-# normal                = { family = "UbuntuMonoNerdFont Propo", style = "Regular" }
-# bold                  = { family = "UbuntuMonoNerdFont Propo", style = "Bold" }
-# italic                = { family = "UbuntuMonoNerdFont Propo", style = "Italic" }
-# bold_italic           = { family = "UbuntuMonoNerdFont Propo", style = "Bold Italic" }
+#normal                = { family = "UbuntuMonoNerdFontPropo", style = "Regular" }
+#bold                  = { family = "UbuntuMonoNerdFontPropo", style = "Bold" }
+#italic                = { family = "UbuntuMonoNerdFontPropo", style = "Italic" }
+#bold_italic           = { family = "UbuntuMonoNerdFontPropo", style = "Bold Italic" }
+
+#normal                = { family = "0xProtoNerdFontMono", style = "Regular" }
+#bold                  = { family = "0xProtoNerdFontMono", style = "Bold" }
+#italic                = { family = "0xProtoNerdFontMono", style = "Italic" }
+#bold_italic           = { family = "0xProtoNerdFontMono", style = "Bold Italic" }
+
+normal                = { family = "HackNerdFontMono", style = "Regular" }
+bold                  = { family = "HackNerdFontMono", style = "Bold" }
+italic                = { family = "HackNerdFontMono", style = "Italic" }
+bold_italic           = { family = "HackNerdFontMono", style = "Bold Italic" }
+
 size                  = 8
 offset                = { x = 0, y = 0 }
 glyph_offset          = { x = 0, y = 0 }
