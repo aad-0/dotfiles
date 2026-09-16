@@ -32,6 +32,50 @@ nnoremap <left>	<nop>
 nnoremap <right>	<nop>
 map <F7> gg=G<C-o><C-o>
 
+" Ctrl+w tuşuna basılı tutarak yön tuşlarıyla hızlı boyutlandırma
+" nnoremap <C-w>j :resize -3<CR>
+" nnoremap <C-w>k :resize +3<CR>
+" nnoremap <C-w>h :vertical resize -3<CR>
+" nnoremap <C-w>l :vertical resize +3<CR>
+" ====================================================================
+" ARDIŞIK PENCERE BOYUTLANDIRMA MODU (Tmux Tarzı)
+" ====================================================================
+function! StartWindowResizeMode()
+    echo "-- resize(exit ESC) --"
+    while 1
+        " Kullanıcının bastığı tek bir karakteri/tuşu yakala
+        let l:ch = getchar()
+        let l:char = type(l:ch) == v:t_number ? nr2char(l:ch) : l:ch
+
+        " Ok Tuşları veya Vim Yön Tuşları (h,j,k,l) kombinasyonlarını kontrol et
+        if l:ch == "\<Up>" || l:char == 'k'
+            resize +2
+        elseif l:ch == "\<Down>" || l:char == 'j'
+            resize -2
+        elseif l:ch == "\<Left>" || l:char == 'h'
+            vertical resize -2
+        elseif l:ch == "\<Right>" || l:char == 'l'
+            vertical resize +2
+        " Eşitleme tuşu (=)
+        elseif l:char == '='
+            wincmd =
+        " ESC veya Enter basılırsa moddan çık
+        elseif l:ch == 27 || l:ch == 13 || l:char == 'q'
+            redraw | echo ""
+            break
+        endif
+
+        " Değişikliği ekranda anlık göster ve başlığı koru
+        redraw
+        echo "-- resize (exit ESC) --"
+    endwhile
+endfunction
+
+" Modu tetikleyecek ana kısayol: Ctrl + w ardından r tuşu (Resize)
+nnoremap <C-w>r :call StartWindowResizeMode()<CR>
+
+
+
 set number
 set cursorline
 "set cursorcolumn
