@@ -94,3 +94,5 @@ export PATH="$PATH:/home/aad/.local/bin"
 # Java fixes for window managers / rendering
 export _JAVA_AWT_WM_NONREPARENTING=1
 export _JAVA_OPTIONS="-Dsun.java2d.xrender=false"
+
+. /usr/share/bash-completion/completions/nmcli
